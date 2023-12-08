@@ -1,0 +1,31 @@
+POST http://localhost:3333/cirurgia
+Content-Type: application/json
+
+{
+    "raca": "Pastor alemão",
+    "tipo_cirurgia": "Castração",
+    "preco": "R$200"
+}
+
+###
+
+GET http://localhost:3333/cirurgia
+
+###
+
+GET http://localhost:3333/cirurgia?search=IFMS
+
+###
+
+PUT http://localhost:3333/cirurgias/808acbe6-c87f-4a84-b5ed-50ec19021805
+Content-Type: application/json
+
+{
+    "raca": "Poodle",
+    "tipo_cirurgia": "Hérnia de disco",
+    "preco": "R$2000"
+}
+
+###
+
+DELETE http://localhost:3333/cirurgias/a253098f-69d9-42d2-a2a7-0039af2c6559
